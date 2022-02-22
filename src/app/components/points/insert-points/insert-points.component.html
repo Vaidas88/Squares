@@ -1,0 +1,30 @@
+<form class="col-3">
+  <label class="form-label">Coordinates:</label>
+  <div class="input-group mb-3">
+    <span class="input-group-text">X:</span>
+    <input
+      [(ngModel)]="point.x"
+      name="pointX"
+      type="number"
+      min="-5000"
+      max="5000"
+      class="form-control"
+    />
+    <span class="input-group-text">Y:</span>
+    <input
+      [(ngModel)]="point.y"
+      name="pointY"
+      type="number"
+      min="-5000"
+      max="5000"
+      class="form-control"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="onInsert()"
+    >
+      Insert
+    </button>
+  </div>
+</form>

@@ -1,0 +1,18 @@
+<form class="col-3">
+  <label class="form-label">Import from file:</label>
+  <div class="input-group mb-3">
+    <input
+      name="fileImport"
+      type="file"
+      class="form-control"
+      (change)="onChange($event)"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="onImport()"
+    >
+      Import
+    </button>
+  </div>
+</form>
